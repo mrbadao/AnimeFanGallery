@@ -51,7 +51,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 600px;
+    height: 640px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
