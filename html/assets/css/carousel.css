@@ -96,16 +96,18 @@ body {
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
-    margin: 80px 0 0 0; /* Space out the Bootstrap <hr> more */
-}
+/*.featurette-divider {*/
+    /*margin: 80px 0 0 0; *//* Space out the Bootstrap <hr> more */
+/*}*/
 
 .featurette {
+    margin-top: 35px;
     width: 100%;
 }
 
 .featurette-black {
-    background: #000;
+    padding-top: 20px;
+    background: #080808;
 }
 
 .featurette-black .featurette-heading {
@@ -122,8 +124,7 @@ body {
 /*Block list*/
 .featurette .block-list{
     margin: 0;
-    padding: 0;
-    padding-bottom: 40px;
+    padding: 0 0 75px 0;
 }
 
 .featurette .block-list .block-item {
@@ -205,6 +206,40 @@ body {
 
 .featurette .block-list .block-item .block-caption h1:hover {
     color: #9d9d9d;
+}
+
+/*Gallery list*/
+.featurette .gallery-list{
+
+}
+
+.featurette .gallery-list .gallery-image{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    background: #000;
+}
+
+.featurette .gallery-list .gallery-image img{
+    width: 100%;
+    border: 1px solid #000;
+    z-index: 9;
+}
+
+.featurette .gallery-list .gallery-image .title{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 10;
+}
+
+.featurette .gallery-list .gallery-image .title h1{
+    padding: 0;
+    margin: 0;
+    color: #e4e4e4;
+    font-size: 20px;
 }
 
 /*Footer*/
