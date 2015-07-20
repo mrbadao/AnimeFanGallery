@@ -65,6 +65,10 @@
         margin-right: 8px;
     }
 
+    .featurette .block-list .block-item .block-caption h1 {
+        font-size: 18px;
+    }
+
     /*Gallery list*/
     .featurette .gallery-list{
         border-top: solid 1px #000000;
@@ -103,16 +107,23 @@
     .featurette .gallery-list .gallery-image:hover .title{
         display: block;
     }
+
+    /*Blog list*/
+    .featurette .blog-list .blog-item {
+        margin-left: 8px;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     /*Search form*/
     .navbar-wrapper .navbar .navbar-form {
         width: 350px;
     }
+    /*block list*/
+
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     /*Search form*/
     .navbar-wrapper .navbar .navbar-form {
         width: 550px;
