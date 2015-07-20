@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/defaultFavicon.ico">
 
     <title>Carousel Template for Bootstrap</title>
 
@@ -15,7 +15,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -26,31 +27,36 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/carousel.css" rel="stylesheet">
+    <link href="assets/css/carousel.responsive.css" rel="stylesheet">
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
 <div class="navbar-wrapper">
     <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="" title=""/>
+                    </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -62,6 +68,9 @@
                             </ul>
                         </li>
                     </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" placeholder="Search..." class="form-control">
+                    </form>
                 </div>
             </div>
         </nav>
@@ -74,12 +83,16 @@
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-        <div class="item active" style="background-image: url('assets/images/slide/img-01.jpg')">
+        <div class="item active" style="background-image: url('assets/images/slide/img-05.jpg')">
             <!--<img class="first-slide" src="assets/images/slide/img-01.jpg" alt="First slide">-->
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+
+                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous"
+                        Glyphicon buttons on the left and right might not load/display properly due to web browser
+                        security rules.</p>
+
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
@@ -89,7 +102,10 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
@@ -99,7 +115,10 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                 </div>
             </div>
@@ -113,7 +132,8 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div><!-- /.carousel -->
+</div>
+<!-- /.carousel -->
 
 
 <!-- Marketing messaging and featurettes
@@ -125,76 +145,245 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+            <img class="img-circle"
+                 src="assets/images/Yoshino.jpg"
+                 alt="Generic placeholder image" width="140" height="140">
+
+            <h2>Anime TV</h2>
+
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+                cursus magna.</p>
+
+            <p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+            <img class="img-circle"
+                 src="assets/images/Kashiwada.png"
+                 alt="Generic placeholder image" width="140" height="140">
+
+            <h2>Gallery</h2>
+
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.</p>
+
+            <p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+            <img class="img-circle"
+                 src="assets/images/Kotori.jpg"
+                 alt="Generic placeholder image" width="140" height="140">
 
+            <h2>Wiki</h2>
 
-    <!-- START THE FEATURETTES -->
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
+                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                fermentum massa justo sit amet risus.</p>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+<div class="featurette featurette-black">
+    <div class="container">
+        <h2 class="featurette-heading text-center">New update</h2>
+        <div class="container">
+            <div class="block-list col-sm-12">
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/datealive.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Date Alive</h1></a>
+                        <span class="japanese-name text-center">デート・ア・ライブ</span>
+                    </div>
+                </div>
+
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/swordartonline1.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Sword Art Online I</h1></a>
+                        <span class="japanese-name text-center">ソードアート・オンライン</span>
+                    </div>
+                </div>
+
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/swordartonline2.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Sword Art Online II</h1></a>
+                        <span class="japanese-name text-center">ソードアート・オンライン II</span>
+                    </div>
+                </div>
+
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/loghorizon1.png">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Log Horizon</h1></a>
+                        <span class="japanese-name text-center">ログ・ホライズン</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/loghorizon2.png">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Log Horizon SS2</h1></a>
+                        <span class="japanese-name text-center">ログ・ホライズン SS2</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/plasticmemories.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Plastic Memories</h1></a>
+                        <span class="japanese-name text-center">プラスティック・メモリーズ</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/fate_stay_night_unlimited_blade_works.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center" title="Fate/stay night: Unlimited Blade Works (TV) 2nd Season">Fate/stay night: Unlimited Blade Works (TV) 2nd Season</h1></a>
+                        <span class="japanese-name text-center">フェイト/ステイナイト</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/ushinotora.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">Ushio and Tora</h1></a>
+                        <span class="japanese-name text-center">うしおととら</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/No_Game_No_Life_light_novel_vol_1.jpg">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center">No Game No Life</h1></a>
+                        <span class="japanese-name text-center">ノーゲーム・ノーライフ</span>
+                    </div>
+                </div>
+                <div class="block-item col-sm-2">
+                    <div class="block-image">
+                        <img alt="Date Alive" src="assets/images/animethumb/Code_Geass_DVD_Part3.png">
+                        <div class="detail">
+                            <p>Ep 12</p>
+                        </div>
+                    </div>
+                    <div class="block-caption">
+                        <a href="#"><h1 class="text-center" title="Code Geass: Lelouch of the Rebellion">Code Geass: Lelouch of the Rebellion</h1></a>
+                        <span class="japanese-name text-center">コードギアス 反逆のルルーシュ</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<hr class="featurette-divider">
 
-    <hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span>
+        </h2>
 
-    <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.</p>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+    <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto"
+             alt="Generic placeholder image">
     </div>
+</div>
 
-    <hr class="featurette-divider">
+<hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
 
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.</p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto"
+             alt="Generic placeholder image">
+    </div>
+</div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+<hr class="featurette-divider">
 
-</div><!-- /.container -->
+<!-- /END THE FEATURETTES -->
+
+<!-- FOOTER -->
+<div class=" footer">
+    <div class="container">
+        <footer>
+            <div class="col-sm-12 col-xs-12">
+                <ul class="list-inline row  f-sns col-sm-6 col-xs-9">
+                    <li><a href="#">&#70;</a></li>
+                    <li><a href="#">&#76;</a></li>
+                    <li><a href="#">&#82;</a></li>
+                    <li><a href="#">&#71;</a></li>
+                </ul>
+                <p class="pull-right scroll-up"><a href="#"><i class=" glyphicon glyphicon-menu-up"></i></a></p>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <p class="text-center">&copy; 2015 Hieunc, Inc. All Right Reserved &middot; <a
+                        href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </div>
+        </footer>
+    </div>
+</div>
 
 
 <!-- Bootstrap core JavaScript
