@@ -1,5 +1,29 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+/*Mobile mode*/
+@media (max-width: 767px) {
+    /*Gallery list*/
+    .featurette .gallery-list {
+        padding: 0;
+    }
+
+    .featurette .gallery-list .gallery-image {
+        margin-bottom: 5px;
+    }
+
+    .featurette .gallery-list .gallery-image .title {
+        padding: 5px 12px;
+        font-size: 20px !important;
+    }
+
+    /*Block list*/
+    .block-list .block-item {
+        width: 330px;
+        height: 537px;
+        margin-bottom: 10px;
+    }
+}
+
 /*Tablet*/
 @media (min-width: 768px) {
     /* Bump up size of carousel content */
@@ -18,36 +42,16 @@
     }
 
     /*Block list*/
-    .featurette .block-list {
-        margin-left: 8%;
-        margin-right: 8.6%;
-    }
-
     .featurette .block-list .block-item {
-        margin-right: 8px;
+        width: 175px;
+        height: 308px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        float: left;
     }
 
-    .featurette .block-list .block-item .detail {
-        display: none;
-        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-    }
-
-    .featurette .block-list .block-item .block-image:hover .detail {
+    .featurette .block-list .block-item .block-image:hover .marker {
         display: block;
-    }
-
-    .featurette .block-list .block-item .detail p {
-        position: absolute;
-        top: 45%;
-        text-align: center;
-        width: 100%;
-        font-size: 18px;
-        color: #e4e4e4;
-        font-weight: 600;
     }
 
     .featurette .block-list .block-item .block-caption h1 {
@@ -93,43 +97,34 @@
         display: block;
     }
 
-    /*Blog list*/
-    .featurette .blog-list .blog-item {
-        margin-left: 8px;
+    /*Block List*/
+    .blog-list .blog-item {
+        margin: 0;
     }
 }
 
 /*PC*/
 @media (min-width: 992px) {
-
+    /*Block list*/
+    .featurette .block-list .block-item {
+        width: 230px;
+        height: 379px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 /*wide screen*/
 @media (min-width: 1200px) {
-
-}
-
-/*Mobile mode*/
-@media (max-width: 767px) {
-
-    /*block list*/
-    .block-list .block-item .detail {
-        display: none;
-    }
-
-    /*Gallery list*/
-    .featurette .gallery-list {
-        padding: 0;
-    }
-
-    .featurette .gallery-list .gallery-image {
+    /*Block list*/
+    .featurette .block-list .block-item {
+        width: 223px;
+        height: auto;
+        margin-right: 5px;
         margin-bottom: 5px;
     }
-
-    .featurette .gallery-list .gallery-image .title {
-        padding: 5px 12px;
-        font-size: 20px !important;
-    }
 }
+
+
 
 
