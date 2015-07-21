@@ -15,13 +15,6 @@
         padding: 5px 12px;
         font-size: 20px !important;
     }
-
-    /*Block list*/
-    .block-list .block-item {
-        width: 330px;
-        height: 537px;
-        margin-bottom: 10px;
-    }
 }
 
 /*Tablet*/
@@ -39,23 +32,6 @@
 
     #myCarousel {
         margin-top: 55px;
-    }
-
-    /*Block list*/
-    .featurette .block-list .block-item {
-        width: 175px;
-        height: 308px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        float: left;
-    }
-
-    .featurette .block-list .block-item .block-image:hover .marker {
-        display: block;
-    }
-
-    .featurette .block-list .block-item .block-caption h1 {
-        font-size: 18px;
     }
 
     /*Gallery list*/
@@ -105,24 +81,12 @@
 
 /*PC*/
 @media (min-width: 992px) {
-    /*Block list*/
-    .featurette .block-list .block-item {
-        width: 230px;
-        height: 379px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-    }
+
 }
 
 /*wide screen*/
 @media (min-width: 1200px) {
-    /*Block list*/
-    .featurette .block-list .block-item {
-        width: 223px;
-        height: auto;
-        margin-right: 5px;
-        margin-bottom: 5px;
-    }
+
 }
 
 

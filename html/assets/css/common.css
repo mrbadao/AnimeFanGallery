@@ -119,6 +119,105 @@ body ul {
     margin-left: 10px;
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette {
+    margin-top: 60px;
+    width: 100%;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    margin-bottom: 20px;
+    font-size: 30px !important;
+    font-family: 'Oswald';
+    font-weight: 600;
+    color: #be252a;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*======================anime list===================*/
+.featurette .anime-list {
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+.anime-list .item-col{
+    /*border: solid 1px #9d9d9d;*/
+    background: #c0d0c6;
+    margin: 0;
+}
+
+.anime-list .item-col .item-thumbnail{
+    position: relative;
+    cursor: pointer;
+}
+
+.anime-list .item-col .item-thumbnail>img{
+    /*border-bottom: solid 1px #9d9d9d;*/
+    width: 100%;
+}
+
+.item-col .item-thumbnail .marker{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  rgba(0,0,0,0.5);
+}
+
+.item-col .item-thumbnail .marker>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px;
+}
+
+.item-col .item-caption{
+    width: 100%;
+    overflow: hidden;
+    height: 55px;
+}
+
+.item-caption h1{
+    margin: 0;
+    padding: 0;
+    line-height: 0.7em;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.item-caption h1 a{
+    text-decoration: none;
+    color:#2475D5;
+    font-size: 20px;
+}
+
+.item-caption h1:hover a{
+    color: #337AB7;
+}
+
+.item-caption .japanese-name{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 13px;
+    color: #be252a;
+    font-weight: 600;
+}
+
+/*gallery detail*/
+.gallery-detail .item{
+    cursor: pointer;
+}
+
 /*paging*/
 
 .pagination-area{
@@ -163,7 +262,7 @@ body ul {
     width: 100%;
     content: ' ';
     min-height: 1px;
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .loadmore img{
@@ -176,7 +275,7 @@ body ul {
 
 .page-header {
     border: none;
-    /*border-bottom: 1px solid #be252a;*/
+    padding-left: 3px;
     margin: 0 0 20px;
     padding-bottom: 9px;
     position: relative;
@@ -188,6 +287,7 @@ body ul {
     font-weight: 500;
     font-size: 59px;
     color: #be252a;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
 }
 .page-header .archive-menu{
     position: relative;
@@ -238,6 +338,108 @@ body ul {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/*Blog list*/
+.featurette .blog-list {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 75px 0;
+}
+
+.featurette .blog-list {
+    position: relative;
+}
+
+.featurette .blog-list .blog-item {
+    margin-bottom: 10px;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay.news {
+    border-top: solid 2px #335cbf;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay {
+    font-size: 13px;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay div {
+    float: left;
+    padding: 2px 8px 5px;
+    position: relative;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay .category {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay .category {
+    border-radius: 0 0 5px;
+    margin-right: -4px;
+    float: left;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay .category.news {
+    background: #335CBF none repeat scroll 0% 0%;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay .comments {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    border-radius: 0 0 5px;
+    color: #000;
+    position: relative;
+    text-indent: 4px;
+    z-index: 1;
+}
+
+.featurette .blog-list .blog-item .blog-thumbnail .over-lay .comments span i {
+    margin-right: 4px;
+}
+
+.blog-list .blog-item .blog-content {
+    clear: both;
+    overflow: hidden;
+    background: #d0e0c6;
+    padding-bottom: 20px !important;
+}
+
+.blog-list .blog-item .blog-content .title {
+    ine-height: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    padding: 0 15px;
+}
+
+.blog-list .blog-item .blog-content .title a {
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2475d5;
+}
+
+.blog-list .blog-item .blog-content .title a:hover {
+    color: #6585d5;
+}
+
+.blog-list .blog-item .blog-content .preview {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    padding: 0 15px;
+    height: 200px;
+}
+
 
 /*Footer*/
 .footer {

@@ -13,6 +13,10 @@
     }
 
     /*Page header*/
+    .page-header{
+        padding: 0 25px;
+    }
+
     .page-header h1{
         text-align: center;
     }
@@ -22,6 +26,18 @@
 
     .archive-menu .dropdown-menu{
         width: 250px;
+    }
+
+    /*=====================anime list===================*/
+    .anime-list .item {
+        width: 100%;
+        padding: 15px 25px;
+    }
+
+    /*=====================gallery-detail===================*/
+    .gallery-detail .item{
+        width: 100%;
+        padding: 15px 25px;
     }
 }
 
@@ -74,6 +90,23 @@
     .archive-menu .dropdown-menu{
         width: 250px;
     }
+
+
+    /*=====================anime list===================*/
+    .anime-list .item {
+        width: 25%;
+        padding: 3px;
+    }
+
+    .anime-list .item .item-thumbnail:hover .marker {
+        display: block;
+    }
+
+    /*=====================gallery-detail===================*/
+    .gallery-detail .item{
+        width: 33.33%;
+        padding: 3px;
+    }
 }
 
 /*PC*/
@@ -82,6 +115,11 @@
     .navbar-wrapper .navbar .navbar-form {
         width: 350px;
     }
+
+    /*=====================anime list===================*/
+    .anime-list .item {
+        width: 20%;
+    }
 }
 
 /*wide screen*/
@@ -89,5 +127,10 @@
     /*Search form*/
     .navbar-wrapper .navbar .navbar-form {
         width: 550px;
+    }
+
+    /*=====================anime list===================*/
+    .anime-list .item {
+        width: 20%;
     }
 }
