@@ -65,6 +65,29 @@
         margin-right: 8px;
     }
 
+    .featurette .block-list .block-item .detail {
+        display: none;
+        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .featurette .block-list .block-item .block-image:hover .detail {
+        display: block;
+    }
+
+    .featurette .block-list .block-item .detail p {
+        position: absolute;
+        top: 45%;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        color: #e4e4e4;
+        font-weight: 600;
+    }
+
     .featurette .block-list .block-item .block-caption h1 {
         font-size: 18px;
     }
@@ -133,7 +156,17 @@
 
 /*Mobile mode*/
 @media (max-width: 767px) {
+    /*button toggle*/
+    button.navbar-toggle{
+        margin-right: 0;
+    }
+
     #myCarousel .carousel-control{
+        display: none;
+    }
+
+    /*block list*/
+    .block-list .block-item .detail{
         display: none;
     }
 
