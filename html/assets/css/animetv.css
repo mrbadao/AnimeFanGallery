@@ -1,0 +1,92 @@
+/* Anime STYLES
+-------------------------------------------------- */
+/* Anime List*/
+.anime-list {
+    content: " ";
+    display: table;
+    clear: both;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #333;
+    padding: 50px 0;
+}
+
+.anime-list .container{
+    padding: 0;
+}
+
+.anime-list .anime-item{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 0;
+    background: #fff;
+}
+
+.anime-list .anime-item .anime-thumbnail{
+    position: relative;
+    cursor: pointer;
+}
+
+.anime-item .marker{
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.anime-item .marker>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px -22px;
+}
+
+.anime-list .anime-item .anime-thumbnail >img{
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px #b4b4b4;
+}
+
+.anime-list .anime-item .anime-caption {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.anime-caption h1, .anime-caption{
+    margin: 5px;
+}
+
+.anime-caption .japanese-name, .anime-caption a{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.anime-list .anime-item .anime-caption .japanese-name{
+    cursor: pointer;
+    height: 19px;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #0a8a9d;
+}
+
+.anime-list .anime-item .anime-caption a{
+    font-size: 20px;
+    font-weight: 600;
+    height: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.anime-list .anime-item .anime-caption a:hover{
+    color: #9d9d9d;
+}

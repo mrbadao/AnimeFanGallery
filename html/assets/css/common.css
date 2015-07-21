@@ -53,6 +53,11 @@ body ul {
 -------------------------------------------------- */
 
 /* Carousel base class */
+/*myCarousel*/
+#myCarousel{
+    margin-bottom: 0;
+}
+
 .carousel {
     margin-bottom: 60px;
     background: #080808;
@@ -86,6 +91,9 @@ body ul {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing{
+    padding-top: 60px;
+}
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
@@ -100,6 +108,125 @@ body ul {
     margin-left: 10px;
 }
 
+/*paging*/
+
+.pagination-area{
+    clear: both;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding: 0;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+.pagination-area .pagination li a:hover, .pagination-area .pagination li .active {
+    background: #FE980F none repeat scroll 0% 0%;
+    color: #FFF;
+}
+
+.pagination-area .pagination li a, .pagination-area .pagination li span {
+    background: #F0F0E9 none repeat scroll 0% 0%;
+    border: 0px none;
+    border-radius: 0px;
+    color: #696763;
+    margin-right: 5px;
+    padding: 4px 10px;
+}
+
+.pagination-area .pagination li span{
+    background: none;
+    color: #fff;
+}
+
+/*loadmore*/
+.loadmore{
+    clear: both;
+    width: 100%;
+    content: ' ';
+    min-height: 1px;
+    padding-top: 20px;
+}
+
+.loadmore img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Page header*/
+
+.page-header {
+    border: none;
+    /*border-bottom: 1px solid #be252a;*/
+    margin: 0 0 20px;
+    padding-bottom: 9px;
+    position: relative;
+    clear: both;
+}
+.page-header h1{
+    font-family: 'Oswald';
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 59px;
+    color: #be252a;
+}
+.page-header .archive-menu{
+    position: relative;
+    width: 100%;
+}
+.page-header .category-list{
+    /*margin: 15px auto 0px 0;*/
+    float: left;
+    background: #3498DB;
+    color: #fff;
+    display: block;
+    border-radius: 0;
+    font-size: 17px;
+    height: 28px;
+    padding: 0 10px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.archive-menu .dropdown-menu{
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    list-style: outside none none;
+    margin-top: 28px;
+    padding: 0;
+    background: #3498DB;
+
+}
+.archive-menu .dropdown-menu li{
+    border-top: solid 1px #fff;
+    margin-top: -1px;
+}
+.archive-menu .dropdown-menu li:hover a{
+    background: #fff;
+    color: #3498DB;
+}
+
+.archive-menu .dropdown-menu li.active a{
+    color: #3498DB;
+}
+
+.archive-menu .dropdown-menu li a{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 /*Footer*/
 .footer {

@@ -1,0 +1,42 @@
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/*Mobile*/
+@media (max-width: 767px) {
+    /*anime list*/
+    .anime-list .anime-item{
+        width: 330px;
+        height: 523px;
+        margin: 10px 15px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    /*anime list*/
+    .anime-list .anime-item{
+        width: 170px;
+        height: 303px;
+        margin: 6px;
+    }
+
+    .anime-list .content{
+        padding-left: 9px;
+    }
+
+    .anime-list .anime-item:hover .marker{
+        display: block;
+    }
+}
+
+/*PC*/
+@media (min-width: 992px) {
+    /*anime list*/
+    .anime-list .anime-item{
+        width: 180px;
+        height: 317px;
+        margin: 5px;
+    }
+    .anime-list .content{
+        padding-left: 10px;
+    }
+}
