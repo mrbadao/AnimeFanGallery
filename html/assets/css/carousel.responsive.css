@@ -1,45 +1,7 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
+/*Tablet*/
 @media (min-width: 768px) {
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-        position: fixed;
-        background: #080808;
-        z-index: 20;
-    }
-
-    /* Navbar positioning foo */
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-        margin-bottom: 5px;
-        background: none;
-    }
-
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-
-    /*Search form*/
-    .navbar-wrapper .navbar .navbar-form {
-        width: 150px;
-    }
-    .navbar-wrapper .navbar .navbar-form input{
-        width: 100%;
-    }
-
-    /* nav item*/
-    .navbar-wrapper .navbar .nav li a{
-        font-size: 15px;
-    }
-
     /* Bump up size of carousel content */
     .carousel-caption p {
         margin-bottom: 20px;
@@ -51,17 +13,17 @@
         font-size: 50px;
     }
 
-    #myCarousel{
+    #myCarousel {
         margin-top: 55px;
     }
 
     /*Block list*/
-    .featurette .block-list{
+    .featurette .block-list {
         margin-left: 8%;
         margin-right: 8.6%;
     }
 
-    .featurette .block-list .block-item{
+    .featurette .block-list .block-item {
         margin-right: 8px;
     }
 
@@ -93,41 +55,41 @@
     }
 
     /*Gallery list*/
-    .featurette .gallery-list{
+    .featurette .gallery-list {
         border-top: solid 1px #000000;
         border-left: solid 1px #000000;
         padding: 0;
     }
 
-    .featurette .gallery-list .gallery-image{
+    .featurette .gallery-list .gallery-image {
 
     }
 
-    .featurette .gallery-list .gallery-image:hover img{
+    .featurette .gallery-list .gallery-image:hover img {
         opacity: 0.7;
     }
 
-    .featurette .gallery-list .gallery-image img{
+    .featurette .gallery-list .gallery-image img {
         border-top: none;
         border-left: none;
     }
 
-    .featurette .gallery-list .gallery-image .title{
+    .featurette .gallery-list .gallery-image .title {
         display: none;
     }
 
-    .featurette .gallery-list .gallery-image.col-sm-6 .title h1{
+    .featurette .gallery-list .gallery-image.col-sm-6 .title h1 {
         font-size: 25px;
         padding: 8px 15px;
     }
 
-    .featurette .gallery-list .gallery-image.col-sm-3 .title{
+    .featurette .gallery-list .gallery-image.col-sm-3 .title {
         bottom: 0;
         text-align: center;
 
     }
 
-    .featurette .gallery-list .gallery-image:hover .title{
+    .featurette .gallery-list .gallery-image:hover .title {
         display: block;
     }
 
@@ -137,49 +99,34 @@
     }
 }
 
+/*PC*/
 @media (min-width: 992px) {
-    /*Search form*/
-    .navbar-wrapper .navbar .navbar-form {
-        width: 350px;
-    }
-    /*block list*/
 
 }
 
+/*wide screen*/
 @media (min-width: 1200px) {
-    /*Search form*/
-    .navbar-wrapper .navbar .navbar-form {
-        width: 550px;
-    }
-}
 
+}
 
 /*Mobile mode*/
 @media (max-width: 767px) {
-    /*button toggle*/
-    button.navbar-toggle{
-        margin-right: 0;
-    }
-
-    #myCarousel .carousel-control{
-        display: none;
-    }
 
     /*block list*/
-    .block-list .block-item .detail{
+    .block-list .block-item .detail {
         display: none;
     }
 
     /*Gallery list*/
-    .featurette .gallery-list{
+    .featurette .gallery-list {
         padding: 0;
     }
 
-    .featurette .gallery-list .gallery-image{
+    .featurette .gallery-list .gallery-image {
         margin-bottom: 5px;
     }
 
-    .featurette .gallery-list .gallery-image .title{
+    .featurette .gallery-list .gallery-image .title {
         padding: 5px 12px;
         font-size: 20px !important;
     }

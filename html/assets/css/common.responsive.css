@@ -1,0 +1,72 @@
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/*Mobile*/
+@media (max-width: 767px) {
+    /*button toggle*/
+    button.navbar-toggle {
+        margin-right: 0;
+    }
+
+    /*Carousel*/
+    #myCarousel .carousel-control {
+        display: none;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+        position: fixed;
+        background: #080808;
+        z-index: 20;
+    }
+
+    /* Navbar positioning foo */
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 5px;
+        background: none;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /*Search form*/
+    .navbar-wrapper .navbar .navbar-form {
+        width: 150px;
+    }
+
+    .navbar-wrapper .navbar .navbar-form input {
+        width: 100%;
+    }
+
+    /* nav item*/
+    .navbar-wrapper .navbar .nav li a {
+        font-size: 15px;
+    }
+}
+
+/*PC*/
+@media (min-width: 992px) {
+    /*Search form*/
+    .navbar-wrapper .navbar .navbar-form {
+        width: 350px;
+    }
+}
+
+/*wide screen*/
+@media (min-width: 1200px) {
+    /*Search form*/
+    .navbar-wrapper .navbar .navbar-form {
+        width: 550px;
+    }
+}
