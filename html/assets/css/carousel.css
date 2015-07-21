@@ -12,11 +12,11 @@
 
 .featurette-black {
     padding-top: 20px;
-    background: #333;
+    /*background: #333;*/
 }
 
 .featurette-black .featurette-heading {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 /* Thin out the marketing headings */
@@ -25,6 +25,7 @@
     font-size: 30px !important;
     font-family: 'Oswald';
     font-weight: 600;
+    color: #be252a;
 }
 
 /*Block list*/
@@ -35,6 +36,7 @@
 
 .featurette .block-list .block-item {
     padding: 0;
+    border: solid 1px #9d9d9d;
 }
 
 .featurette .block-list .block-item .block-caption {
@@ -89,7 +91,7 @@
     display: block;
     margin-top: 2px;
     font-size: 13px;
-    color: #0a8a9d;
+    color: #be252a;
 }
 
 .featurette .block-list .block-item .block-caption h1 {
@@ -211,7 +213,7 @@
 .blog-list .blog-item .blog-content {
     clear: both;
     overflow: hidden;
-    background: #fff;
+    background: #d0e0c6;
     padding-bottom: 20px !important;
 }
 

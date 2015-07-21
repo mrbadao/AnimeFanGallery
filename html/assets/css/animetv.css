@@ -8,7 +8,6 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    background: #333;
     padding: 50px 0;
 }
 
@@ -21,7 +20,8 @@
     position: relative;
     min-height: 1px;
     padding: 0;
-    background: #fff;
+    background: #c0d0c6;
+    border: solid 1px #9d9d9d;
 }
 
 .anime-list .anime-item .anime-thumbnail{
@@ -76,7 +76,7 @@
     height: 19px;
     margin-top: 2px;
     font-size: 13px;
-    color: #0a8a9d;
+    color: #be252a;
 }
 
 .anime-list .anime-item .anime-caption a{
