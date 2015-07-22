@@ -20,12 +20,12 @@
     .page-header h1{
         text-align: center;
     }
-    .page-header .category-list{
+    .page-header .category-list, .page-header .slideshow{
         width: 100%;
     }
 
     .archive-menu .dropdown-menu{
-        width: 250px;
+        width: 100%;
     }
 
     /*=====================anime list===================*/
@@ -87,10 +87,18 @@
         width: 250px;
     }
 
+    .page-header .slideshow{
+        width: 310px;
+    }
+
     .archive-menu .dropdown-menu{
         width: 250px;
     }
 
+    /*--------------Init---------------------------------*/
+    .anime-list .item, .gallery-detail .item{
+        float: left;
+    }
 
     /*=====================anime list===================*/
     .anime-list .item {

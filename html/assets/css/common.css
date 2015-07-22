@@ -98,6 +98,14 @@ body ul {
     min-width: 100%;
 }
 
+/*__________________Init*_________________*/
+.anime-list .item, .gallery-detail .item{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -176,6 +184,58 @@ body ul {
     margin: -22px;
 }
 
+.item-col .item-thumbnail .over-lay{
+
+    font-size: 13px;
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+.item-col .item-thumbnail .over-lay div{
+    border-radius: 0px 0px 5px;
+    text-transform: uppercase;
+    padding: 2px 5px 5px;
+    position: relative;
+    float: left;
+}
+.item-col .item-thumbnail .over-lay .status{
+    margin-right: -4px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.over-lay.inprocess{
+    border-top: 2px solid #335CBF;
+}
+
+.over-lay.inprocess .status{
+    background: #335CBF none repeat scroll 0% 0%;
+}
+
+.over-lay.completed{
+    border-top: 2px solid #be252a;
+}
+
+.over-lay.completed .status{
+    background: #be252a none repeat scroll 0% 0%;
+}
+
+.over-lay.new{
+    border-top: 2px solid #1AB394;
+}
+
+.over-lay.new .status{
+    background: #1AB394 none repeat scroll 0% 0%;
+}
+
+.item-col .item-thumbnail .over-lay .date{
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    color: #000;
+    text-indent: 4px;
+    z-index: 1;
+}
+
 .item-col .item-caption{
     width: 100%;
     overflow: hidden;
@@ -213,10 +273,68 @@ body ul {
     font-weight: 600;
 }
 
+/*Gallery list*/
+.featurette .gallery-list {
+}
+
+.featurette .gallery-list .gallery-image {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    background: #000;
+}
+
+.featurette .gallery-list .gallery-image img {
+    width: 100%;
+    border: 1px solid #000;
+    z-index: 9;
+}
+
+.featurette .gallery-list .gallery-image .title {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 10;
+}
+
+.featurette .gallery-list .gallery-image .title h1 {
+    padding: 0;
+    margin: 0;
+    color: #e4e4e4;
+    font-size: 20px;
+}
+
 /*gallery detail*/
+.gallery-detail {
+    padding-bottom: 54px;
+}
 .gallery-detail .item{
     cursor: pointer;
 }
+
+/*__________________Gllery popup_________________*/
+
+.gallery-slideshow, .content{
+    width:100%;
+    position: relative;
+    padding: 50px;
+    background: #000;
+}
+.gallery-slide .item{
+    position: relative;
+}
+
+.gallery-slide .item>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 0!important;
+}
+
+
+
 
 /*paging*/
 
@@ -293,8 +411,7 @@ body ul {
     position: relative;
     width: 100%;
 }
-.page-header .category-list{
-    /*margin: 15px auto 0px 0;*/
+.page-header .btn{
     float: left;
     background: #be252a;
     color: #fff;
