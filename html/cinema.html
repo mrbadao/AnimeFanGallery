@@ -84,18 +84,83 @@
 </div>
 
 
-<!-- ==================================================slide show================================================== -->
-<div class="gallery-slideshow">
-    <div class="content">
-        <img id="mainimg" src="assets/images/slide/img-03.png" style="max-width:100%; height:auto;">
+<!-- ==================================================anime-cinema================================================== -->
+<div class="featurette singledark">
+    <div class="container">
+        <div class="row">
+            <div class="anime-cinema">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video width="100%" controls>
+                        <source src="https://r3---sn-8qj-nboee.googlevideo.com/videoplayback?requiressl=yes&id=538c75b0d1eb9a8f&itag=18&source=picasa&ip=113.161.74.112&ipbits=0&expire=1440154163&sparams=expire,id,ip,ipbits,itag,mm,mn,ms,mv,pl,requiressl,source&signature=79F5E7F9C8819F1F70179C0F4A4AD3E8072DC770.5A103262EC9C8CF1F4A87ADF93A7D92D3324821C&key=cms1&begin=0&cms_redirect=yes&mm=31&mn=sn-8qj-nboee&ms=au&mt=1437562112&mv=m&pl=19"
+                                type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="sns">
+                    <div class="facebook">
+                        <div id="fb-root"></div>
+                        <script>(function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1519765078301349";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="100%"
+                             data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </div>
+                    <div class="tweet">
+                        <script>window.twttr = (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                    t = window.twttr || {};
+                            if (d.getElementById(id)) return t;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+
+                            t._e = [];
+                            t.ready = function (f) {
+                                t._e.push(f);
+                            };
+
+                            return t;
+                        }(document, "script", "twitter-wjs"));</script>
+                        <a style="margin-top: 10px;" class="twitter-share-button"
+                           href="https://twitter.com/intent/tweet">
+                            Tweet</a>
+                    </div>
+                    <div class="gplus">
+                        <script src="https://apis.google.com/js/platform.js" async defer></script>
+                        <g:plusone></g:plusone>
+                    </div>
+                </div>
+                <div class="ep-list container">
+                    <a href="http://localhost/animefangallery/html/a.html">Ep 01</a>
+                    <a href="http://localhost/animefangallery/html/b.html">Ep 02</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 03</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 04</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 05</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 06</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 07</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html" class="active">Ep 108</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 09</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 10</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 11</a>
+                    <a href="http://localhost/animefangallery/html/cinema.html">Ep 12</a>
+                </div>
+
+                <div class="fb-comments" data-colorscheme="dark"
+                     data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%"
+                     data-numposts="5">
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<video width="320" height="240" controls>
-    <source src="https://r3---sn-8qj-nboee.googlevideo.com/videoplayback?requiressl=yes&id=538c75b0d1eb9a8f&itag=18&source=picasa&ip=113.161.74.112&ipbits=0&expire=1440154163&sparams=expire,id,ip,ipbits,itag,mm,mn,ms,mv,pl,requiressl,source&signature=79F5E7F9C8819F1F70179C0F4A4AD3E8072DC770.5A103262EC9C8CF1F4A87ADF93A7D92D3324821C&key=cms1&begin=0&cms_redirect=yes&mm=31&mn=sn-8qj-nboee&ms=au&mt=1437562112&mv=m&pl=19" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
+<!--/.anime-cinema-->
 <!-- FOOTER -->
 <div class=" footer">
     <div class="container">
@@ -125,9 +190,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="assets/js/holder.min.js"></script>
-
-<script src="assets/js/jquery.image-fit-window.js"></script>
-<script src="assets/js/slide.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

@@ -12,8 +12,6 @@ body ul {
     list-style: none;
 }
 
-
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -51,7 +49,7 @@ body ul {
 }
 
 .navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:focus{
+.navbar-inverse .navbar-nav > .active > a:focus {
     background: #333;
 }
 
@@ -65,7 +63,7 @@ body ul {
 
 /* Carousel base class */
 /*myCarousel*/
-#myCarousel{
+#myCarousel {
     margin-bottom: 0;
 }
 
@@ -73,7 +71,6 @@ body ul {
     margin-bottom: 60px;
     background: #333;
 }
-
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -98,8 +95,10 @@ body ul {
     min-width: 100%;
 }
 
-/*__________________Init*_________________*/
-.anime-list .item, .gallery-detail .item{
+/*__________________Init_________________*/
+.anime-list .item,
+.gallery-detail .item,
+.anime-detail {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -110,9 +109,10 @@ body ul {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing{
+.marketing {
     padding-top: 100px;
 }
+
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
@@ -130,9 +130,21 @@ body ul {
 /* Featurettes
 ------------------------- */
 
-.featurette {
+.featurette, .relate {
     margin-top: 60px;
     width: 100%;
+}
+
+.featurette.singledark {
+    background: #000000;
+    margin-top: -5px;
+}
+
+.relate {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 /* Thin out the marketing headings */
@@ -151,98 +163,100 @@ body ul {
     padding: 0 0 20px 0;
 }
 
-.anime-list .item-col{
+.anime-list .item-col {
     /*border: solid 1px #9d9d9d;*/
     background: #c0d0c6;
     margin: 0;
 }
 
-.anime-list .item-col .item-thumbnail{
+.anime-list .item-col .item-thumbnail {
     position: relative;
     cursor: pointer;
 }
 
-.anime-list .item-col .item-thumbnail>img{
+.anime-list .item-col .item-thumbnail > img {
     /*border-bottom: solid 1px #9d9d9d;*/
     width: 100%;
 }
 
-.item-col .item-thumbnail .marker{
+.item-col .item-thumbnail .marker {
     display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background:  rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.item-col .item-thumbnail .marker>img{
+.item-col .item-thumbnail .marker > img {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -22px;
 }
 
-.item-col .item-thumbnail .over-lay{
+.item-col .item-thumbnail .over-lay {
 
     font-size: 13px;
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
 }
-.item-col .item-thumbnail .over-lay div{
+
+.item-col .item-thumbnail .over-lay div {
     border-radius: 0px 0px 5px;
     text-transform: uppercase;
     padding: 2px 5px 5px;
     position: relative;
     float: left;
 }
-.item-col .item-thumbnail .over-lay .status{
+
+.item-col .item-thumbnail .over-lay .status {
     margin-right: -4px;
     color: #fff;
     font-weight: 600;
     z-index: 2;
 }
 
-.over-lay.inprocess{
+.over-lay.inprocess {
     border-top: 2px solid #335CBF;
 }
 
-.over-lay.inprocess .status{
+.over-lay.inprocess .status {
     background: #335CBF none repeat scroll 0% 0%;
 }
 
-.over-lay.completed{
+.over-lay.completed {
     border-top: 2px solid #be252a;
 }
 
-.over-lay.completed .status{
+.over-lay.completed .status {
     background: #be252a none repeat scroll 0% 0%;
 }
 
-.over-lay.new{
+.over-lay.new {
     border-top: 2px solid #1AB394;
 }
 
-.over-lay.new .status{
+.over-lay.new .status {
     background: #1AB394 none repeat scroll 0% 0%;
 }
 
-.item-col .item-thumbnail .over-lay .date{
+.item-col .item-thumbnail .over-lay .date {
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
     color: #000;
     text-indent: 4px;
     z-index: 1;
 }
 
-.item-col .item-caption{
+.item-col .item-caption {
     width: 100%;
     overflow: hidden;
     height: 55px;
 }
 
-.item-caption h1{
+.item-caption h1 {
     margin: 0;
     padding: 0;
     line-height: 0.7em;
@@ -250,17 +264,17 @@ body ul {
     padding-left: 5px;
 }
 
-.item-caption h1 a{
+.item-caption h1 a {
     text-decoration: none;
-    color:#2475D5;
+    color: #2475D5;
     font-size: 20px;
 }
 
-.item-caption h1:hover a{
+.item-caption h1:hover a {
     color: #337AB7;
 }
 
-.item-caption .japanese-name{
+.item-caption .japanese-name {
     width: 100%;
     display: block;
     overflow: hidden;
@@ -310,41 +324,210 @@ body ul {
 .gallery-detail {
     padding-bottom: 54px;
 }
-.gallery-detail .item{
+
+.gallery-detail .item {
     cursor: pointer;
 }
 
 /*__________________Gllery popup_________________*/
 
-.gallery-slideshow, .content{
-    width:100%;
-    position: relative;
-    padding: 50px;
-    background: #000;
-}
-.gallery-slide .item{
-    position: relative;
+/*__________________Anime detail_________________*/
+.anime-detail-banner {
+    margin-top: 55px;
 }
 
-.gallery-slide .item>img{
+.anime-detail-banner .row {
+    height: 400px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.anime-detail-banner .anime-thumbnail {
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 0!important;
+    width: 100%;
+    height: 100%;
 }
 
+.anime-detail-banner .anime-thumbnail > img {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    margin-bottom: -60px;
+}
 
+.anime-detail-banner .anime-title {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    font-family: "Oswald";
+    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -56px;
+    padding-left: 280px;
+    z-index: 1;
+}
 
+.anime-detail {
+    background: #fff;
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-/*paging*/
+.anime-detail .col-sm-4 {
+    height: 100%;
+    display: block;
+}
 
-.pagination-area{
+.anime-detail .col-sm-4 a {
+    height: 45px;
+    padding-top: 10px;
+    margin: 10px auto;
+    background: #CC3349;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+}
+
+.anime-detail .col-sm-4 a:hover {
+    background: #933233;
+}
+
+.anime-detail .col-sm-4 a span {
+    padding-right: 10px;
+}
+
+.anime-detail .col-sm-8 {
+    padding-bottom: 30px;
+}
+
+.anime-detail .col-sm-8 .info-row {
+    font-size: 18px;
+
+}
+
+.info-row {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info-row span.glyphicon,
+.anime-detail .col-sm-12 span.sumary i {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.info-row.name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-row.name .japanese-name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.anime-detail .col-sm-12 {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 16px;
+}
+
+.anime-detail .col-sm-12 span.sumary {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.anime-detail .col-sm-12 p {
+    padding: 10px 20px;
+}
+
+.relate .container {
+    background: #fff;
+}
+
+.relate span.title {
+    display: block;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 35px;
+    color: #be252a;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.relate .anime-list {
+    padding: 10px 15px 30px !important;
+}
+
+/*__________________Anime cinema_________________*/
+.anime-cinema .sns {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: 35px;
+    background: #fff;
+}
+
+.anime-cinema .ep-list {
+    position: relative;
+    background: #fff;
+    padding: 10px 10px;
+    /*height: 50px;*/
+}
+
+.anime-cinema .ep-list a {
+    text-align: center;
+    position: relative;
+    float: left;
+    font-size: 15px;
+    padding: 2px 8px 4px;
+    display: block;
+    width: 65px;
+    margin: 2px;
+    font-weight: 600;
+    background: #d0e0c6;
+}
+
+.anime-cinema .ep-list a.active {
+    color: red;
+}
+
+.anime-cinema .ep-list a:visited{
+    color: yellow;
+}
+
+.sns .facebook, .sns .tweet, .sns .gplus {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+/*-----------paging--------------*/
+
+.pagination-area {
     clear: both;
     width: 100%;
     margin: 30px 0;
 }
 
-.pagination{
+.pagination {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
@@ -369,13 +552,13 @@ body ul {
     padding: 4px 10px;
 }
 
-.pagination-area .pagination li span{
+.pagination-area .pagination li span {
     background: none;
     color: #fff;
 }
 
 /*loadmore*/
-.loadmore{
+.loadmore {
     clear: both;
     width: 100%;
     content: ' ';
@@ -383,7 +566,7 @@ body ul {
     padding-bottom: 20px;
 }
 
-.loadmore img{
+.loadmore img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -399,7 +582,8 @@ body ul {
     position: relative;
     clear: both;
 }
-.page-header h1{
+
+.page-header h1 {
     font-family: 'Oswald';
     margin-top: 0;
     font-weight: 500;
@@ -407,11 +591,13 @@ body ul {
     color: #be252a;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
 }
-.page-header .archive-menu{
+
+.page-header .archive-menu {
     position: relative;
     width: 100%;
 }
-.page-header .btn{
+
+.page-header .btn {
     float: left;
     background: #be252a;
     color: #fff;
@@ -424,7 +610,7 @@ body ul {
     text-transform: uppercase;
 }
 
-.archive-menu .dropdown-menu{
+.archive-menu .dropdown-menu {
     border: medium none;
     border-radius: 0;
     box-shadow: none;
@@ -434,20 +620,22 @@ body ul {
     background: #be252a;
 
 }
-.archive-menu .dropdown-menu li{
+
+.archive-menu .dropdown-menu li {
     border-top: solid 1px #fff;
     margin-top: -1px;
 }
-.archive-menu .dropdown-menu li:hover a{
+
+.archive-menu .dropdown-menu li:hover a {
     background: #fff;
     color: #be252a;
 }
 
-.archive-menu .dropdown-menu li.active a{
+.archive-menu .dropdown-menu li.active a {
     color: #be252a;
 }
 
-.archive-menu .dropdown-menu li a{
+.archive-menu .dropdown-menu li a {
     color: #fff;
     text-align: center;
     font-size: 15px;
@@ -556,7 +744,6 @@ body ul {
     padding: 0 15px;
     height: 200px;
 }
-
 
 /*Footer*/
 .footer {

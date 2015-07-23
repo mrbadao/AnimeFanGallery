@@ -39,6 +39,11 @@
         width: 100%;
         padding: 15px 25px;
     }
+
+    /*__________________Anime cinema_________________*/
+    .anime-cinema{
+        padding: 85px 15px 80px;
+    }
 }
 
 /*Tablet*/
@@ -115,6 +120,27 @@
         width: 33.33%;
         padding: 3px;
     }
+
+    /*__________________Anime detail_________________*/
+    .anime-detail .col-sm-4{
+        padding: 20px 15px 30px 15px;
+        display: block;
+    }
+
+    /*__________________Anime detail_________________*/
+    .anime-detail .col-sm-4{
+        padding: 60px 15px;
+        display: block;
+    }
+    .anime-detail .col-sm-4 a{
+        height: 45px;
+        width: 167px;
+    }
+
+    /*__________________Anime cinema_________________*/
+    .anime-cinema{
+        padding: 105px 0 60px;
+    }
 }
 
 /*PC*/
@@ -128,6 +154,17 @@
     .anime-list .item {
         width: 20%;
     }
+
+    /*__________________Anime detail_________________*/
+    .anime-detail .col-sm-4 a{
+        height: 45px;
+        width: 250px;
+    }
+
+    /*__________________Anime cinema_________________*/
+    .anime-cinema{
+        padding: 125px 0 80px;
+    }
 }
 
 /*wide screen*/
@@ -140,5 +177,16 @@
     /*=====================anime list===================*/
     .anime-list .item {
         width: 20%;
+    }
+
+    /*__________________Anime detail_________________*/
+    .anime-detail .col-sm-4 a{
+        height: 45px;
+        width: 250px;
+    }
+
+    /*__________________Anime cinema_________________*/
+    .anime-cinema{
+        padding: 155px 0 100px;
     }
 }
